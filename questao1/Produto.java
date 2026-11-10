@@ -5,6 +5,8 @@ import java.util.List;
 public class Produto implements Subject {
     private final List<Observer> observadores = new ArrayList<>();
     private final String nome;
+
+    
     private int estoque;
 
     public Produto(String nome, int estoque) {
@@ -26,7 +28,7 @@ public class Produto implements Subject {
 
 
 
-    
+
     @Override 
     public void pingarObservers(){
         for(Observer observer : observadores){
